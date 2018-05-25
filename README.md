@@ -4,6 +4,9 @@
 <html>
   <head></head>
   <body>
+    Autheur: Latricha Seym <br>
+    Klas: MD1B <br>
+    Project: My Band <br>
  <table>
   <tr>
     <th>Opdracht</th>
