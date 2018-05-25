@@ -2,9 +2,9 @@
 
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>My Band</head>
   <body>
-    <p>Autheur: Latricha Seym</p>
+    <p>Auteur: Latricha Seym</p>
     <p>Onderwerp: My Band</p>
     <p>Klas: MD1B</p>
 
