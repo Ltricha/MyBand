@@ -16,7 +16,7 @@
      <td>Debriefing</td>
      <td>ToDo</td>
      <td>Geen link</td>
-     <td>Een debriefing voor My Band schrijven</td>
+     <td>Een debriefing voor My Band schrijven.</td>
      <td>25-05-2018</td>
    </tr>
   </body>
