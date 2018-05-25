@@ -4,9 +4,10 @@
 <html>
   <head></head>
   <body>
-    Autheur: Latricha Seym <br>
-    Klas: MD1B <br>
-    Project: My Band <br>
+    <p>Autheur: Latricha Seym</p>
+    <p>Subject: My Band</p>
+    <p>Klas: MD1B</p>
+
  <table>
   <tr>
     <th>Opdracht</th>
