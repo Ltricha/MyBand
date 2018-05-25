@@ -19,7 +19,7 @@
    <tr>
      <td>Debriefing</td>
      <td>ToDo</td>
-     <td><a href="">Link</a></td>
+     <td><a href="file:///C:/Users/latri/Desktop/Debriefing_MyBand.pdf">Link</a></td>
      <td>Een debriefing voor My Band schrijven.</td>
      <td>25-05-2018</td>
    </tr>
