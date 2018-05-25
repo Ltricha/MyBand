@@ -6,14 +6,18 @@
   <body>
  <table>
   <tr>
-    <th>Title</th>
+    <th>Opdracht</th>
+    <th>Status</th>
     <th>Link</th>
-    <th>Info</th>
+    <th>Informatie</th>
+    <th>Datum</th>
   </tr>
    <tr>
-     <td>Bla bla bla</td>
-     <td>Bla bliep bloep</td>
-     <td> Haa haa hoo hoo hee hee</td>
+     <td>Debriefing</td>
+     <td>ToDo</td>
+     <td>Geen link</td>
+     <td>Een debriefing voor My Band schrijven</td>
+     <td>25-05-2018</td>
    </tr>
   </body>
 <html>
