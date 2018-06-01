@@ -9,6 +9,7 @@
     <p>Klas: MD1B</p>
 
  <table>
+  <!--Table head-->
   <tr>
     <th>Opdracht</th>
     <th>Status</th>
@@ -16,6 +17,7 @@
     <th>Informatie</th>
     <th>Datum</th>
   </tr>
+  <!--Debriefing-->
    <tr>
      <td>Debriefing</td>
      <td>ToDo</td>
@@ -23,5 +25,13 @@
      <td>Een debriefing voor My Band schrijven.</td>
      <td>25-05-2018</td>
    </tr>
+  <!--Next assignment-->
+  <tr>
+    <td>N/A</td>
+    <td>ToDo</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
   </body>
 <html>
