@@ -19,7 +19,7 @@
    <tr>
      <td>Debriefing</td>
      <td>ToDo</td>
-     <td><a href="https://drive.google.com/open?id=1jmJTxOo4C43XS_cSUXfvtvY4cPUSSc5T" target="_blank">https://drive.google.com/open?            id=1jmJTxOo4C43XS_cSUXfvtvY4cPUSSc5T</a></td>
+     <td><a href="https://drive.google.com/open?id=1jmJTxOo4C43XS_cSUXfvtvY4cPUSSc5T" target="_blank">Link</a></td>
      <td>Een debriefing voor My Band schrijven.</td>
      <td>25-05-2018</td>
    </tr>
