@@ -25,13 +25,13 @@
      <td>Een debriefing voor My Band schrijven.</td>
      <td>25-05-2018</td>
    </tr>
-  <!--Next Assignment-->
+  <!--Schets-->
   <tr>
-    <td>N/A</td>
+    <td>Schets</td>
     <td>ToDo</td>
     <td>N/A</td>
-    <td>N/A</td>
-    <td>N/A</td>
+    <td>Plan van aanpak maken in een schets of prototype.</td>
+    <td>08-06-2018</td>
   </tr>
     <!--Next Assignment-->
   <tr>
