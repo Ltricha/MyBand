@@ -2,10 +2,15 @@
 
 //Connects to database.
 function connect_db(){
+    //$host = 'localhost';
+    //$user = 'root';
+    //$pass = '';
+    //$db = 'project_myband';
+
      $host = 'localhost';
-     $user = 'root';
-     $pass = '';
-     $db = 'project_myband';
+     $user = 'latricha';
+     $pass = 'wachtwoord';
+     $db = '25163_MyBand';
 
     //Connects to database.
     $mysql = new mysqli($host, $user, $pass, $db);
@@ -17,6 +22,7 @@ function connect_db(){
 
     return $mysql;
 }
+
 
 //Registrates user.
 function verify_registration(){
@@ -75,6 +81,7 @@ function verify_registration(){
     }
 }
 
+
 //Signs user in.
 function verify_login(){
     $mysql = connect_db();
@@ -105,6 +112,7 @@ function verify_login(){
     if(count($errors) == 0){
         if($numRows == 1 && password_verify($password, $row['password'])){
             $_SESSION['username'] = $username;
+            header('location: index.php?page=home');
             //Checks if the user in an admin
             if($row['isAdmin'] == 1){
                 $_SESSION['admin'] = $username;
@@ -116,20 +124,61 @@ function verify_login(){
 }
 
 
-
-function edit_text(){
+//Edits content of the pages.
+function edit_content(){
     $mysql = connect_db();
+    $title = strip_tags($_POST['title']);
+    $image = strip_tags($_POST['image']);
+    $id = $_POST['id'];
 
-    $new_text = $_POST['new_text'];
-
-    $query = 'INSERT INTO text VALUES(?)';
-
-    $stmt = $mysql->prepare($query);
-    $stmt->bind_param('s', $new_text);
-    $stmt->execute();
-
-
+    if($add_text = strip_tags($_POST['add_text'])){
+        $query = 'INSERT INTO articles VALUES(0, ?, ?, ?)';
+        $stmt = $mysql->prepare($query);
+        $stmt->bind_param('sss', $title, $add_text, $image);
+        $stmt->execute();
+    } elseif ($edit_text = strip_tags($_POST['edit_text'])){
+        $query = "UPDATE articles SET content = '$edit_text' WHERE id = '$id' ";
+        $mysql->query($query) or die('error querying change text.');
+    }
 }
+
+
+function delete_content(){
+    $mysql = connect_db();
+    $id = $_POST['id'];
+    $query = "DELETE FROM articles WHERE id ='$id'";
+    $mysql->query($query) or die('error querying deleting.');
+}
+
+
+
+//Gets content from database
+function get_content(){
+    $mysql = connect_db();
+    $query = 'SELECT id, title, content, image FROM articles';
+    $stmt = $mysql->prepare($query);
+    $stmt->bind_result($id, $title, $content, $image);
+    $stmt->execute();
+    $results = array();
+    while($stmt->fetch()){
+        $article = array();
+        $article[] = $id;
+        $article[] = $title;
+        $article[] = $content;
+        $article[] = $image;
+        $results[] = $article;
+    }
+    return $results;
+}
+
+
+
+
+
+
+
+
+
 
 
 

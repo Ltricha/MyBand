@@ -3,7 +3,4 @@
 <a href="index.php?page=about">About</a>
 <a href="index.php?page=search">Search</a>
 <a href="index.php?page=contact">Contact</a>
-<a href="index.php?page=login" id="login">Log in</a>
-<a href="index.php?page=registration" id="registration">Register</a>
-
-
+<a href="index.php?page=logout">Log out</a>

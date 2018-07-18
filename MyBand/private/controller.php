@@ -1,32 +1,60 @@
 <?php
 
-function display_view($smarty){
-    $smarty->display('header.tpl');
-    $smarty->display('menu.tpl');
-    $smarty->display('footer.tpl');
-
-}
-
-
 
 ///////////////////////////////////////////////-Links
 
 function homepage_action($smarty){
-    $smarty->display('home.tpl');
+    global $page;
+    display_page($smarty, $page);
 }
+
+function display_page($smarty, $page){
+    $articles = get_content();
+    $smarty->assign('articles', $articles);
+    $smarty->display('header.tpl');
+    if(isset($_SESSION['username'])){
+        $smarty->display('menu_loggedin.tpl');
+        echo "Logged in";
+    } else{
+        $smarty->display('menu.tpl');
+        echo "Not logged in";
+    }
+    $smarty->display($page . '.tpl');
+    $smarty->display('footer.tpl');
+}
+
 function registration_action($smarty){
-    $smarty->display('registration.tpl');
+    global $page;
+    display_page($smarty, $page);
 }
 function login_action($smarty){
-    $smarty->display('login.tpl');
+    global $page;
+    display_page($smarty, $page);
 }
 function admin_action($smarty){
-    $smarty->display('header.tpl');
-    $smarty->display('menu.tpl');
-    $smarty->display('admin.tpl');
-    $smarty->display('footer.tpl');}
+    global $page;
+    display_page($smarty, $page);
+}
 function logout_action($smarty){
-    $smarty->display('logout.tpl');
+    global $page;
+    display_page($smarty, $page);
+}
+
+function agenda_action($smarty){
+    global $page;
+    display_page($smarty, $page);
+}
+function about_action($smarty){
+    global $page;
+    display_page($smarty, $page);
+}
+function search_action($smarty){
+    global $page;
+    display_page($smarty, $page);
+}
+function contact_action($smarty){
+    global $page;
+    display_page($smarty, $page);
 }
 
 ///////////////////////////////////////////////-Buttons
@@ -46,8 +74,11 @@ function page_not_found_action($smarty){
 
 ///////////////////////////////////////////////-Admin commands
 
-function edit_text_action(){
-   edit_text();
+function edit_content_action(){
+    edit_content();
+}
+function delete_content_action(){
+    delete_content();
 }
 
 ///////////////////////////////////////////////
