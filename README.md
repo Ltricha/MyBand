@@ -49,5 +49,13 @@
     <td>N/A</td>
     <td>N/A</td>
   </tr>
+  <!--Next Assignment-->
+  <tr>
+    <td>Live versie</td>
+    <td>Done</td>
+    <td><a href="http://25163.hosts.ma-cloud.nl/bewijzenmap/MyBand/public/index.php">http://25163.hosts.ma-cloud.nl/bewijzenmap/MyBand/public/index.php</a></td>
+    <td>Een live versie van mijn website</td>
+    <td>N/A</td>
+  </tr>
   </body>
 <html>
